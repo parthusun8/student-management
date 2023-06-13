@@ -75,6 +75,7 @@ WSGI_APPLICATION = 'studentManage.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
+    #Can we shift this to env, not doing as of now
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
