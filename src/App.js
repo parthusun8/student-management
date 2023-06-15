@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Sections from './Sections';
+import Students from './Students';
+import Scores from './Scores';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <MuiThemeProvider>
+      <BrowserRouter>
+        <div className="app">
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/departments" element={<Sections />} />
+            <Route path="/students" element={<Students />} />
+            <Route path="/scores" element={<Scores />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
   );
 }
 

@@ -1,0 +1,25 @@
+{
+  "Marks": [
+    {
+      "semester": 1,
+      "subjects": {
+        "theory": [{ "subject_name": "Data Centric Networks", "marks": 75 }],
+        "lab": [
+          { "subject_name": "PPS", "marks": 40 },
+          { "subject_name": "MongoDb", "marks": 86 }
+        ]
+      }
+    },
+    {
+      "semester": 2,
+      "subjects": {
+        "theory": [
+          { "subject_name": "DSA", "marks": 56 },
+          { "subject_name": "APP", "marks": 89 },
+          { "subject_name": "Embedded Systems Using Raspberry Pi", "marks": 90 }
+        ],
+        "lab": []
+      }
+    }
+  ]
+}
