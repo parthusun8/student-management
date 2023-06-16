@@ -10,7 +10,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button, FormControl, TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
-
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -110,7 +109,7 @@ function Sections({ match }) {
                 <Table>
                     <TableHead>
                         <TableRow>
-                            <TableCell align="center">Sl.No.</TableCell>
+                            <TableCell align="center">Section Id</TableCell>
                             <TableCell align="center">Section Name</TableCell>
                             <TableCell align="center">Total Students</TableCell>
                             <TableCell align="center">Action</TableCell>
@@ -120,8 +119,8 @@ function Sections({ match }) {
                         {sectionData.map((row, i) => (
                             <TableRow key={row.id}>
                                 <TableCell align="center">
-                                    <Link to={`/students?id=${row.id}&section=${row.section_name}&dept=${dept_name}`}>
-                                        {i + 1}
+                                    <Link to={`/students?id=${row.id}&dept_id=${id}&section=${row.section_name}&dept=${dept_name}`}>
+                                        {row.id}
                                     </Link>
                                 </TableCell>
                                 <TableCell align="center">{row.section_name}</TableCell>

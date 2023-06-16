@@ -44,6 +44,8 @@ function Scores() {
                         <TableCell align="center">Semester</TableCell>
                         <TableCell align="center">Theory Subjects</TableCell>
                         <TableCell align="center">Lab Subjects</TableCell>
+                        <TableCell align="center">SGPA</TableCell>
+                        <TableCell align="center">Grade</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -80,6 +82,8 @@ function Row({ row }) {
                 </TableCell>
                 <TableCell align="center">{row.subjects.theory.length}</TableCell>
                 <TableCell align="center">{row.subjects.lab.length}</TableCell>
+                <TableCell align="center">{row.sgpa}</TableCell>
+                <TableCell align="center">{row.grade}</TableCell>
             </TableRow>
 
             <TableRow>
@@ -98,6 +102,7 @@ function Row({ row }) {
                                         <TableCell align="center" style={{ color: "white" }}>Subject Code</TableCell>
                                         <TableCell align="center" style={{ color: "white" }}>Subject Name</TableCell>
                                         <TableCell align="center" style={{ color: "white" }}>Marks</TableCell>
+                                        <TableCell align="center" style={{ color: "white" }}>Grade</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -109,6 +114,7 @@ function Row({ row }) {
                                             </TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.subject_name}</TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.marks}</TableCell>
+                                            <TableCell align="center" style={{ color: "white" }}>{historyRow.grade}</TableCell>
                                         </TableRow>
                                      : <TableRow key={historyRow.subject_code} style={{ backgroundColor: "red" }}>
                                             <TableCell align="center" style={{ color: "white" }} component="th" scope="row">
@@ -116,6 +122,7 @@ function Row({ row }) {
                                             </TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.subject_name}</TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.marks}</TableCell>
+                                            <TableCell align="center" style={{ color: "white" }}>{historyRow.grade}</TableCell>
                                         </TableRow>))}
                                 </TableBody>
                             </Table>
@@ -130,6 +137,7 @@ function Row({ row }) {
                                         <TableCell align="center" style={{ color: "white" }}>Subject Code</TableCell>
                                         <TableCell align="center" style={{ color: "white" }}>Subject Name</TableCell>
                                         <TableCell align="center" style={{ color: "white" }}>Marks</TableCell>
+                                        <TableCell align="center" style={{ color: "white" }}>Grade</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -141,6 +149,7 @@ function Row({ row }) {
                                             </TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.subject_name}</TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.marks}</TableCell>
+                                            <TableCell align="center" style={{ color: "white" }}>{historyRow.grade}</TableCell>
                                         </TableRow>
                                      : <TableRow key={historyRow.subject_code} style={{ backgroundColor: "red" }}>
                                             <TableCell align="center" style={{ color: "white" }} component="th" scope="row">
@@ -148,6 +157,7 @@ function Row({ row }) {
                                             </TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.subject_name}</TableCell>
                                             <TableCell align="center" style={{ color: "white" }}>{historyRow.marks}</TableCell>
+                                            <TableCell align="center" style={{ color: "white" }}>{historyRow.grade}</TableCell>
                                         </TableRow>))}
                                 </TableBody>
                             </Table>

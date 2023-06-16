@@ -1,25 +1,25 @@
 {
-  "Marks": [
+  "data": [
     {
-      "semester": 1,
-      "subjects": {
-        "theory": [{ "subject_name": "Data Centric Networks", "marks": 75 }],
-        "lab": [
-          { "subject_name": "PPS", "marks": 40 },
-          { "subject_name": "MongoDb", "marks": 86 }
-        ]
-      }
+      "name": "Parth",
+      "regdno": 1,
+      "dept_no": "CSE",
+      "section_id": "N2",
+      "current_semester": 2,
+      "data": [
+        { "semester": 2, "sgpa": 8.0, "grade": "A" },
+        { "semester": 1, "sgpa": 7.0, "grade": "B" }
+      ],
+      "cgpa": 7.5
     },
     {
-      "semester": 2,
-      "subjects": {
-        "theory": [
-          { "subject_name": "DSA", "marks": 56 },
-          { "subject_name": "APP", "marks": 89 },
-          { "subject_name": "Embedded Systems Using Raspberry Pi", "marks": 90 }
-        ],
-        "lab": []
-      }
+      "name": "keshu",
+      "regdno": 2,
+      "dept_no": "CSE",
+      "section_id": "N2",
+      "current_semester": 1,
+      "data": [{ "semester": 1, "sgpa": 9.0, "grade": "A+" }],
+      "cgpa": 9.0
     }
   ]
 }
